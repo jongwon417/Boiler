@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity"
+    android:orientation="vertical"
+    android:background="@drawable/img_boiler">
+
+    <Button
+        android:id="@+id/btn_on"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="#0080ff"
+        android:text="ON"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btn_off"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="OFF"
+        android:textColor="#000000"
+        android:background="#ff7f00"
+        android:textSize="40sp" />
+
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="HOME"
+        android:textColor="#000000"
+        android:background="#d3d3d3"
+        android:textSize="40sp" />
+
+</LinearLayout>

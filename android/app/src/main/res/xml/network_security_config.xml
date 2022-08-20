@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains = "true">10.10.141.62</domain>
+        <domain includeSubdomains = "true">10.10.141.62:8080/</domain>
+        <domain includeSubdomains = "true">10.10.141.62:8080</domain>
+        <domain includeSubdomains = "true">10.10.141.62:8080/android/memberList</domain>
+        <domain includeSubdomains = "true">localhost:8080</domain>
+        <domain includeSubdomains = "true">10.10.141.61</domain>
+
+
+
+    </domain-config>
+
+
+</network-security-config>

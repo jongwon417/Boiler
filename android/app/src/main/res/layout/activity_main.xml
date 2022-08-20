@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/img_boiler">
+
+    <TextView
+        android:id="@+id/tv_temp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:background="#FB6738"/>
+
+    <TextView
+        android:id="@+id/tv_on_off"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:background="#7747C8"/>
+
+
+
+    <Button
+        android:id="@+id/btn_goSwitchPage"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="button"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:background="#d3d3d3"
+        />
+
+
+</LinearLayout>

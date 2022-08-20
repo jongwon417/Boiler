@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>게시판</title>
+</head>
+
+<script>
+
+function btn_modi(){
+	document.formModify.action='/board/boardModify?seqno=[[${view.seqno}]]';
+	document.formModify.submit();
+}
+
+</script>
+<body>
+<h1>게시물 등록</h1>
+
+<form name="formModify" method="post" onsubmit="btn_modi()">
+
+	아이디 : <input type="text" name="userid" th:value="${view.userid}"><br>
+	작성자 이름 : <input type="text" name="mwriter" th:value="${view.mwriter}"><br>
+	제목 : <input type="text" name="mtitle" th:value="${view.mtitle}"><br>
+	내용<br>
+	<textarea cols=100 row=500 name="mcontent" th:text="${view.mcontent}"></textarea>
+	<br>
+	<input type="button" value="등록" onclick="btn_modi()">
+	<br>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>게시판</title>
+</head>
+<body>
+
+<h1>게시물 목록 보기</h1>
+<table border=1>
+
+	<tr>
+		<th>번호</th>
+		<th>제목</th>
+		<th>작성자</th>
+		<th>작성일</th>
+	</tr>
+	<tbody>
+	
+		<tr th:each="list:${list}">
+			<td><span th:text=${list.seqno}></span></td>
+			<td><a th:href="@{'/board/boardView?seqno='+${list.seqno}}"><span th:text="${list.mtitle}"></span></a></td>
+			<td><span th:text=${list.mwriter}></span></td>
+			<td><span th:text=${list.mregdate}></span></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>게시판 내용 보기</title>
+</head>
+<script>
+
+function btn_delete(){
+	if(confirm("정말로 삭제합니까?") == true){
+		location.href="/board/boardDelete?seqno=[[${view.seqno}]]";
+	}
+}
+
+</script>
+<body>
+
+<h1>게시물 상세 보기</h1>
+<br><br>
+
+작성자 이름 : <span th:text="${view.mwriter}"></span><br>
+게시물 제목 : <span th:text="${view.mtitle}"></span><br>
+작성일자 : <span th:text="${view.mregdate}"></span><br>
+
+내용<br>
+<pre th:text="${view.mcontent}"></pre>
+<br>
+<br>
+[<a th:href="@{'/board/boardModify?seqno='+${view.seqno}}">수정</a>][<a href="javascript:btn_delete()">삭제</a>]<br>
+</body>
+</html>
